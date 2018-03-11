@@ -10,15 +10,15 @@ import uk.co.labfour.error.BException;
 import uk.co.labfour.net.transport.IGenericTransport;
 
 public class RequestInfo {
-	BaseRequest request;
-	BaseResponse response;
-	long reqId = -1L;
-	IGenericTransport transport;
-	IService service;
-	String apiKey;
-	String targetResourceUuid;
-	String actionOnTargetResource;
-	CountDownLatch syncResponse = null;
+	private BaseRequest request;
+	private BaseResponse response;
+	private long reqId = -1L;
+	private IGenericTransport transport;
+	private IService service;
+	private String apiKey;
+	private String targetResourceUuid;
+	private String actionOnTargetResource;
+	private CountDownLatch syncResponse = null;
 
 	public RequestInfo(BaseRequest request, String apiKey, String targetResourceUuid, String actionOnTargetResource, IGenericTransport transport, IService service) {
 		this.request = request;

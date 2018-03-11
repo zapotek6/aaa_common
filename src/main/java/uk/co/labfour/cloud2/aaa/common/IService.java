@@ -6,5 +6,5 @@ import uk.co.labfour.error.BException;
 
 public interface IService {
 	
-	public BaseResponse doExec(BaseRequest request) throws BException;
+	BaseResponse doExec(BaseRequest request) throws BException;
 }

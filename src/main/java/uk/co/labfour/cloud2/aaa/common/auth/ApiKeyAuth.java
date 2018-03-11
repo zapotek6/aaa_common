@@ -7,14 +7,14 @@ import uk.co.labfour.error.BException;
 import static uk.co.labfour.cloud2.aaa.common.AAAConstants.*;
 
 public class ApiKeyAuth implements IAuth {
-    String type;
-    String apiKey;
+    private String type;
+    private String apiKey;
 
     public ApiKeyAuth() {
         this.type = AUTH_TYPE_APIKEY;
     }
 
-    public ApiKeyAuth(String apiKey) {
+    private ApiKeyAuth(String apiKey) {
         this.type = AUTH_TYPE_APIKEY;
         this.apiKey = apiKey;
     }

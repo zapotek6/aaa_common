@@ -7,15 +7,15 @@ import uk.co.labfour.error.BException;
 import static uk.co.labfour.cloud2.aaa.common.AAAConstants.*;
 
 public class CredentialsAuth implements IAuth {
-    String type;
-    String uid;
-    String pwd;
+    private String type;
+    private String uid;
+    private String pwd;
 
     public CredentialsAuth() {
         this.type = AUTH_TYPE_CREDENTIALS;
     }
 
-    public CredentialsAuth(String uid, String pwd) {
+    private CredentialsAuth(String uid, String pwd) {
         this.type = AUTH_TYPE_CREDENTIALS;
         this.uid = uid;
         this.pwd = pwd;

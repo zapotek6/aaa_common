@@ -5,13 +5,13 @@ import uk.co.labfour.bjson.BJsonObject;
 import uk.co.labfour.cloud2.aaa.common.AAAConstants;
 import uk.co.labfour.error.BException;
 
-public class Auth {
+class Auth {
 
     public static BJsonObject getAuth(BJsonObject obj) throws BException {
         return getAuth(obj, AAAConstants.AUTH_CONTAINER_FLD);
     }
 
-    public static BJsonObject getAuth(BJsonObject obj, String authObjectNane) throws BException {
+    private static BJsonObject getAuth(BJsonObject obj, String authObjectNane) throws BException {
         try {
             if (obj.has(authObjectNane)) {
                 return obj.getElementAsBJsonObject(authObjectNane);

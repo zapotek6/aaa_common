@@ -6,7 +6,7 @@ import uk.co.labfour.cloud2.protocol.BaseRequest;
 import uk.co.labfour.error.BException;
 
 public class Utility {
-    public static BJsonObject createApiKeyAuthObject(String apiKey) throws BException {
+    private static BJsonObject createApiKeyAuthObject(String apiKey) throws BException {
         BJsonObject auth = new BJsonObject();
         try {
             auth.put(AAAConstants.APIKEY_FLD, apiKey);

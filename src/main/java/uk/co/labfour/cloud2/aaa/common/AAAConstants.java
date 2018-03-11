@@ -10,7 +10,7 @@ public class AAAConstants {
     public static final String AAA_AUTHENTICATOR_API = "aaa.authenticator";
     public static final String AAA_CREATE_COMPLEX_ENTITY_API = "aaa.createComplexEntity";
 
-    public static final String AUTH_CONTAINER_FLD = "auth"; //BaseRequest.kAuth;
+    public static final String AUTH_CONTAINER_FLD = BaseRequest.kAuth;
     public static final String AUTH_MODE_FLD = "mode";
     public static final String APIKEY_FLD = "apikey";
     public static final String AUTH_TYPE_APIKEY = "apikey";
@@ -36,14 +36,21 @@ public class AAAConstants {
     public static final String PERMISSION_ALLOW_FLD = "allow";
     public static final String ROLES_FLD = "roles";
     public static final String ROLE_ROLE_UUID_FLD = "roleUuid";
-    public static final String ROLE_PARENT_UUID_FLD = "parentUuid";
+    public static final String ROLE_VALIDITY_DOMAIN_UUID_FLD = "parentUuid";
     public static final String ROLE_GRANT_ON_SUBDOMAINS_FLD = "grantOnSubDomains";
 
-
-
-    public static final String INNER_AUTH_CONTAINER_FLD = "auth";
+    public static final String INNER_AUTH_CONTAINER_FLD = BaseRequest.kAuth;
 
     public static final String ENTITY_UUID_FLD = "entityUuid";
+
+
+    public static final String PERMISSION_ACTION__CREATE_ENTITY = "CREATE_ENTITY";
+    public static final String PERMISSION_ACTION__DELETE_ENTITY = "DELETE_ENTITY";
+    public static final String PERMISSION_ACTION__READ_ENTITY = "READ_ENTITY";
+
+
+    public static final boolean PERMISSION_ALLOW = true;
+    public static final boolean PERMISSION_DENY = false;
 
     public static final long DEFAULT_AAA_TIMEOUT_VALUE = 4;
     public static final TimeUnit DEFAULT_AAA_TIMEOUT_TIMEUNIT = TimeUnit.SECONDS;

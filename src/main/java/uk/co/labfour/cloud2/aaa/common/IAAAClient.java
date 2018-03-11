@@ -6,9 +6,9 @@ import uk.co.labfour.error.BException;
 
 public interface IAAAClient {
 
-	public BaseResponse doProcess(BaseResponse response) throws BException;
+	BaseResponse doProcess(BaseResponse response) throws BException;
 
-	public BaseResponse doAuthz(RequestInfo requestInfo, String apiKey) throws BException;
+	BaseResponse doAuthz(RequestInfo requestInfo, String apiKey) throws BException;
 
-	public BaseResponse doCreateComplexEntity(RequestInfo requestInfo, String apiKey) throws BException;
+	BaseResponse doCreateComplexEntity(RequestInfo requestInfo, String apiKey) throws BException;
 }
