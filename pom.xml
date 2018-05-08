@@ -6,13 +6,34 @@
 
     <groupId>uk.co.labfour.cloud2.aaa</groupId>
     <artifactId>aaa_common</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.2</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>bsh-central</id>
+            <name>bsh-releases</name>
+            <url>http://artifactory.labfour.co.uk/artifactory/libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>bsh-snapshots</id>
+            <uniqueVersion>true</uniqueVersion>
+            <name>bsh-snapshots</name>
+            <url>http://artifactory.labfour.co.uk/artifactory/libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <parent>
         <groupId>uk.co.labfour.cloud2</groupId>
         <artifactId>parent-pom</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
+
     <dependencies>
         <dependency>
             <groupId>uk.co.labfour.cloud2</groupId>
