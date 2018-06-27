@@ -1,26 +1,25 @@
 package uk.co.labfour.cloud2.aaa.common;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
-
-import uk.co.labfour.cloud2.aaa.common.IService;
 import uk.co.labfour.cloud2.protocol.BaseRequest;
 import uk.co.labfour.cloud2.protocol.BaseResponse;
 import uk.co.labfour.error.BException;
-import uk.co.labfour.net.transport.IGenericTransport;
+import uk.co.labfour.net.transport.IGenericTransport2;
+
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 public class RequestInfo {
 	private BaseRequest request;
 	private BaseResponse response;
 	private long reqId = -1L;
-	private IGenericTransport transport;
+    private IGenericTransport2 transport;
 	private IService service;
 	private String apiKey;
 	private String targetResourceUuid;
 	private String actionOnTargetResource;
 	private CountDownLatch syncResponse = null;
 
-	public RequestInfo(BaseRequest request, String apiKey, String targetResourceUuid, String actionOnTargetResource, IGenericTransport transport, IService service) {
+    public RequestInfo(BaseRequest request, String apiKey, String targetResourceUuid, String actionOnTargetResource, IGenericTransport2 transport, IService service) {
 		this.request = request;
 		this.transport = transport;
 		this.service = service;
@@ -45,11 +44,11 @@ public class RequestInfo {
 		this.reqId = reqId;
 	}
 
-	public IGenericTransport getTransport() {
+    public IGenericTransport2 getTransport() {
 		return transport;
 	}
 
-	public void setTransport(IGenericTransport transport) {
+    public void setTransport(IGenericTransport2 transport) {
 		this.transport = transport;
 	}
 
