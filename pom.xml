@@ -6,12 +6,12 @@
 
     <groupId>uk.co.labfour.cloud2.aaa</groupId>
     <artifactId>aaa_common</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <distributionManagement>
@@ -31,7 +31,7 @@
     <parent>
         <groupId>uk.co.labfour.cloud2</groupId>
         <artifactId>parent-pom</artifactId>
-        <version>0.0.2</version>
+        <version>0.0.4</version>
     </parent>
 
     <dependencies>
